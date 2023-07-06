@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div id="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo sint dolorem inventore saepe fugit! Excepturi tenetur cum eveniet, cupiditate aliquam minus totam nemo explicabo, numquam ut qui ab quam tempora?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt omnis quibusdam dolor ut quo? Natus, cumque? Praesentium incidunt labore excepturi omnis, facilis exercitationem ipsum inventore dolore quidem voluptatibus, veniam explicabo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita et a voluptatum harum maiores adipisci quaerat, officia non quas voluptas cupiditate incidunt, illo beatae eos perferendis, obcaecati impedit rem!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, quam et repellat quo expedita nemo amet quibusdam natus distinctio a tenetur officiis molestias fuga sed placeat dolorum quasi reprehenderit vero?</p>
+    </div>
+  </section>
+
+  <script>
+    const paragrafo = document.querySelector('#container');
+    let p = document.querySelectorAll('p');
+
+    const stilosBody = getComputedStyle(document.body);
+    const backgroundColorBody = stilosBody.backgroundColor;
+
+    for (let i of p){
+        i.style.color = 'white';
+        i.style.backgroundColor = backgroundColorBody;
+    }
+  </script>
+</body>
+
+</html>
